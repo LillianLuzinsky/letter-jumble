@@ -47,7 +47,7 @@ const BottomBarStyling = styled.section`
   letter-spacing: 2px;
 
   h2{
-    color: hotpink;
+    color: #6392FF;
     font-weight: 400;
     font-size: 4rem;
     margin: 0;
@@ -55,7 +55,7 @@ const BottomBarStyling = styled.section`
   }
 
   p{
-    color: pink;
+    color: #ae7fff;
     font-size: 2rem;
   }
   
