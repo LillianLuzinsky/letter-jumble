@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navlinks from './Navlinks';
+import HomePage from '../Home/Homepage'
 
 const DesktopNavStyling = styled.nav`
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   background: #1c1c1c;
   color: white;
-  height: 10vh;
-
+  
   #logo {
     margin-left: 3rem;
     font-size: 2rem;
@@ -79,15 +83,20 @@ const MobileNavButton = styled.button`
 
 const DesktopNavbar = props => {
   return (
-    <DesktopNavStyling>
-      <div id="logo">Letter-Jumble</div>
-      <Navlinks />
-      <MobileNavButton onClick={props.toggleMobileNavbar}>
-        <div className="toggle-button-line"></div>
-        <div className="toggle-button-line"></div>
-        <div className="toggle-button-line"></div>
-      </MobileNavButton>
-    </DesktopNavStyling>
+    <div>
+      <DesktopNavStyling>
+        <div id="logo">Letter-Jumble</div>
+        <Navlinks />
+        <MobileNavButton onClick={props.toggleMobileNavbar}>
+          <div className="toggle-button-line"></div>
+          <div className="toggle-button-line"></div>
+          <div className="toggle-button-line"></div>
+        </MobileNavButton>
+      </DesktopNavStyling>
+      <HomePage />
+    </div>
+    
+    
   );
 }
 
