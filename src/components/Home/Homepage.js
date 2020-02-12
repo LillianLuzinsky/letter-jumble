@@ -17,10 +17,11 @@ const TopBarStyling = styled.section`
   align-items: center;
   justify-content: center;
   background:url("https://images.squarespace-cdn.com/content/v1/5d0d172e2f89550001cdbbdd/1564014407402-0UCJNTMTJO8CNXBYATTZ/ke17ZwdGBToddI8pDm48kD8UNA5htNZzJ2nXG_t3_YFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI-k1SNpg2egVLuszOr666hzy7jB5vo7ET0iyk0--iRPcKMshLAGzx4R3EDFOm1kBS/23579fec434a601.jpg?format=2500w") no-repeat center;
-  background:url("https://mrsponsorpants.typepad.com/.a/6a00e551f9630d883301bb08a0c568970d-pi") no-repeat center;
+  /* background:url("https://mrsponsorpants.typepad.com/.a/6a00e551f9630d883301bb08a0c568970d-pi") no-repeat center; */
   background-size:cover;
   
   h1{
+    font-weight: 700;
     font-size: 8rem;
     color: white;
     margin: 0;

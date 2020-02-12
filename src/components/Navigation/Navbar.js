@@ -4,6 +4,9 @@ import MobileNavbar from './MobileNavbar'
 import styled from 'styled-components'
 
 const NavbarStyling = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
