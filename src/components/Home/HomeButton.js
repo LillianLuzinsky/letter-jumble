@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const HomeButtonStyling = styled.button`
   color: white;
   text-decoration: none;
-  background: #ff00c6;
-  border: 2px solid #ff00c6;
+  background: none;
+  border: 2px solid white;
   border-radius: 50px;
   font-size: 2rem;
   width: 200px;
@@ -16,19 +16,20 @@ const HomeButtonStyling = styled.button`
   transition: 0s;
 
   :hover{
-    color: #ff00c6;
-    background: white;
-    border: 2px solid white;
+    background: purple;
+    border: 2px solid purple;
     transition: 1s;
   }
 
   .home-links{
     text-decoration: none;
-    color: white;
+    color: hotpink;
 
     :hover{
     color: #ff00c6;
   }
+
+
 `
 const HomeButton = () => {
   return (
