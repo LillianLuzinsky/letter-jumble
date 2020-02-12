@@ -10,13 +10,17 @@ const NavbarStyling = styled.div`
 `
 
 class Navbar extends Component {
+
+  state = {
+    displayMobileNavbar: true
+  }
   render() {
     return (
       <NavbarStyling>
-        <DesktopNavbar/>
-        <MobileNavbar/>
+        <DesktopNavbar />
+        <MobileNavbar displayMobileNavbar={this.state.displayMobileNavbar} />
       </NavbarStyling>
-    )
+    );
   }
 }
 

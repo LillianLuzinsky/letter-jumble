@@ -6,6 +6,8 @@ const MobileNavStyling = styled.nav`
   width: 50vw;
   background: #1c1c1c;
   align-self: flex-end;
+  transition: transform 1s;
+  transform: translateX( ${props => props.displayMobileNavbar ? ("0%") : ("100%") } );
 
   .nav-links {
     display: flex;
@@ -25,12 +27,12 @@ const MobileNavStyling = styled.nav`
   }
 `;
 
-const MobileNavbar = () => {
+const MobileNavbar = props => {
   return (
-    <MobileNavStyling>
+    <MobileNavStyling displayMobileNavbar = {props.displayMobileNavbar}>
       <Navlinks />
     </MobileNavStyling>
-  )
+  );
 }
 
 export default MobileNavbar
