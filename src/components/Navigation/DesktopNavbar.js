@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navlinks from './Navlinks';
+import { Link } from 'react-router-dom'
 import HomePage from '../Home/Homepage'
 
 const DesktopNavStyling = styled.nav`
@@ -85,7 +86,7 @@ const DesktopNavbar = props => {
   return (
     <div>
       <DesktopNavStyling>
-        <div id="logo">Letter-Jumble</div>
+        <Link id="logo" to="/">Letter-Jumble</Link>
         <Navlinks />
         <MobileNavButton onClick={props.toggleMobileNavbar}>
           <div className="toggle-button-line"></div>
