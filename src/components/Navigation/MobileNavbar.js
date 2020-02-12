@@ -12,7 +12,7 @@ const MobileNavStyling = styled.nav`
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
     list-style: none;
     letter-spacing: 2px;
     font-weight: 300;

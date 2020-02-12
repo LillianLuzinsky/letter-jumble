@@ -29,6 +29,10 @@ const DesktopNavStyling = styled.nav`
     list-style: none;
     letter-spacing: 2px;
     font-weight: 300;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .links {
@@ -36,8 +40,6 @@ const DesktopNavStyling = styled.nav`
     font-size: 1.2rem;
     padding: 5px 10px;
     text-decoration: none;
-    /* border: 1px solid white;
-    border-radius: 50px; */
   }
 `;
 
@@ -51,7 +53,12 @@ const MobileNavButton = styled.button`
   font-size: 2rem;
   border-radius: 50px;
   border: solid 2px white;
-  font-weight: 300
+  font-weight: 300;
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block; 
+  }
 `;
 
 const DesktopNavbar = () => {
