@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom';
+import JumblePage from '../JumblePage/Jumblepage'
 
 const Navlinks = () => {
   return (
@@ -11,13 +12,13 @@ const Navlinks = () => {
       </li>
 
       <li>
-        <Link to="/" className="links">
+        <Link to="/jumble" className="links">
           Jumble
         </Link>
       </li>
 
       <li>
-        <Link to="/" className="links">
+        <Link to="/spelling" className="links">
           Spelling
         </Link>
       </li>

@@ -7,7 +7,6 @@ const HomeStyling = styled.body`
   height:100vh;
   display: block;
   
-  
 `
 
 const TopBarStyling = styled.section`
@@ -29,13 +28,9 @@ const TopBarStyling = styled.section`
     border: solid white 5px;
     border-radius: 300px;
     padding: 50px;
-    /* text-shadow: 10px 5px 2px #171717; */
     background: rgba(0,0,0,.3);
   }
-
-  
 `
-
 const BottomBarStyling = styled.section`
   height: 50vh;
   color: #FF0067;
