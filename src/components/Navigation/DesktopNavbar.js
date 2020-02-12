@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import Navlinks from './Navlinks';
 
-const DesktopNavbarStyling = styled.nav`
+const DesktopNavStyling = styled.nav`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -12,11 +12,12 @@ const DesktopNavbarStyling = styled.nav`
   height: 10vh;
 
   #logo {
-    margin-left: 2rem;
+    margin-left: 3rem;
     font-size: 2rem;
     font-weight: 500;
     list-style: none;
     text-decoration: none;
+    letter-spacing: 1px;
   }
 
   .nav-links {
@@ -26,6 +27,8 @@ const DesktopNavbarStyling = styled.nav`
     align-items: center;
     width: 35vw;
     list-style: none;
+    letter-spacing: 2px;
+    font-weight: 300;
   }
 
   .links {
@@ -36,41 +39,32 @@ const DesktopNavbarStyling = styled.nav`
     /* border: 1px solid white;
     border-radius: 50px; */
   }
-  
-  
-}
+`;
+
+const MobileNavButton = styled.button`
+  background: transparent;
+  height: 6vh;
+  width: 6vh;
+  color: white;
+  margin-right: 2rem;
+  border: none;
+  font-size: 2rem;
+  border-radius: 50px;
+  border: solid 2px white;
+  font-weight: 300
 `;
 
 const DesktopNavbar = () => {
   return (
-    <DesktopNavbarStyling>
-
+    <DesktopNavStyling>
       <div id="logo">Letter-Jumble</div>
-      <div id="spacer" />
 
-      <ul className="nav-links">
-        <li>
-          <Link to="/" className="links">
-            Home
-          </Link>
-        </li>
+      <Navlinks/>
 
-        <li>
-          <Link to="/" className="links">
-            Jumble
-          </Link>
-        </li>
 
-        <li>
-          <Link to="/" className="links">
-            Spelling
-          </Link>
-        </li>
-      </ul>
-
-      <button>Buttom</button>
-    </DesktopNavbarStyling>
-  );
+      <MobileNavButton>X</MobileNavButton>
+    </DesktopNavStyling>
+  )
 }
 
 export default DesktopNavbar
