@@ -94,10 +94,10 @@ const DesktopNavbar = props => {
           <div className="toggle-button-line"></div>
         </MobileNavButton>
       </DesktopNavStyling>
-      <HomePage />
+      {/* <HomePage /> */}
     </div>
   
   );
 }
 
-export default DesktopNavbar
+export default DesktopNavbar;

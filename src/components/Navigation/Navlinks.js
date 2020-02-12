@@ -26,4 +26,4 @@ const Navlinks = () => {
   )
 }
 
-export default Navlinks
+export default Navlinks;

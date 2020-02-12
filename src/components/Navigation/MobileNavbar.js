@@ -46,4 +46,4 @@ const MobileNavbar = props => {
   );
 }
 
-export default MobileNavbar
+export default MobileNavbar;

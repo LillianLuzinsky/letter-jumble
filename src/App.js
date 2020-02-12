@@ -1,16 +1,23 @@
 import React from 'react';
-import Navbar from './components/Navigation/Navbar'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import HomePage from './components/Home/Homepage'
-import Jumblepage from './components/JumblePage/Jumblepage'
+import JumblePage from './components/JumblePage/Jumblepage';
+import SpellingPage from './components/SpellingPage/SpellingPage'
+
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <HomePage/>
-      <Jumblepage/>
+      <Route exact path="/">
+        <HomePage />
+      </Route>
+      <Route exact path="/jumble">
+        <JumblePage />
+      </Route>
+      <Route exact path="/spelling">
+        <SpellingPage />
+      </Route>
     </BrowserRouter>
   );
 }

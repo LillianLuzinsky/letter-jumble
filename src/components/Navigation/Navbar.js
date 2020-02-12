@@ -44,10 +44,10 @@ class Navbar extends Component {
     return (
       <NavbarStyling>
         <DesktopNavbar toggleMobileNavbar = { this.toggleMobileNavbar } />
-        <MobileNavbar displayMobileNavbar={ this.state.displayMobileNavbar } />
+        {/* <MobileNavbar displayMobileNavbar={ this.state.displayMobileNavbar } /> */}
       </NavbarStyling>
     );
   }
 }
 
-export default Navbar
+export default Navbar;

@@ -39,7 +39,7 @@ const HomeButton = () => {
         </Link>
       </HomeButtonStyling>
         <HomeButtonStyling>
-        <Link className="home-links" to="/jumble" className="links">
+        <Link className="home-links" to="/spelling" className="links">
             Spelling
         </Link>
           </HomeButtonStyling>
@@ -47,4 +47,4 @@ const HomeButton = () => {
   )
 }
 
-export default HomeButton
+export default HomeButton;

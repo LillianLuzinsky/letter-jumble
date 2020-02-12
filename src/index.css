@@ -9,3 +9,28 @@ body{
 }
 
 button:focus {outline:0;}
+
+html{
+  height: 100%;
+}
+
+.App {
+  position: fixed;
+  background: black;
+  color: #fff;
+  min-height: 100vh;
+  padding: 25px 5%;
+  text-align: left;
+}
+
+.App img {
+  cursor: grab;
+  width: 10vw;
+  height: auto;
+}
+
+h1{
+  font-weight: 500;
+  color: #3e3e3e;
+  padding-left: 2%;
+}
