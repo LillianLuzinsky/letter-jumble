@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from '../Navigation/Navbar'
 
 class SpellingPage extends Component {
 
@@ -42,6 +43,7 @@ class SpellingPage extends Component {
   render() {
     return (
       <div>
+        <Navbar/>
         <img src={this.state.image} width="100" />
         <h1>Guess</h1>
         <ul>

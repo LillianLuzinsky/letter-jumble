@@ -10,12 +10,12 @@ const HomeStyling = styled.body`
 `
 
 const TopBarStyling = styled.section`
-  height: 50vh;
+  height: 60vh;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background:url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-double-twelve-purple-gradient-e-commerce-promotion-geometry-banner-image_183414.jpg") no-repeat center;
   background-size:cover;
   
@@ -30,33 +30,32 @@ const TopBarStyling = styled.section`
     border-radius: 300px;
     padding: 50px;
     background: rgba(0,0,0,.3);
+    margin-top: 50px;
   }
-`
-const BottomBarStyling = styled.section`
-  height: 50vh;
-  color: #FF0067;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background:url("https://images.squarespace-cdn.com/content/v1/5d0d172e2f89550001cdbbdd/1564014407402-0UCJNTMTJO8CNXBYATTZ/ke17ZwdGBToddI8pDm48kD8UNA5htNZzJ2nXG_t3_YFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI-k1SNpg2egVLuszOr666hzy7jB5vo7ET0iyk0--iRPcKMshLAGzx4R3EDFOm1kBS/23579fec434a601.jpg?format=2500w") no-repeat center;
-  background-size: cover;
-  letter-spacing: 2px;
-  background: #171717;
 
-  h2{
+    h2{
     color: #6392FF;
     color: white;
     font-weight: 400;
     font-size: 3rem;
     margin: 0;
-    margin-top: 20px;
   }
 
+`
+const BottomBarStyling = styled.section`
+  height: 40vh;
+  color: #FF0067;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: 2px;
+  background: #171717;
+
   p{
-    color: #555555;
+    color: #777777;
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   
 `
@@ -67,11 +66,12 @@ class Homepage extends Component {
       <HomeStyling>
         <TopBarStyling>
           <h1>Letter-Jumble</h1>
+          <h2>for parents with little kids</h2>
           
         </TopBarStyling>
 
         <BottomBarStyling>
-          <h2>for parents with little kids</h2>
+          
           <p>Choose a game to play with your child</p>
           <HomeButton/>
         </BottomBarStyling>
