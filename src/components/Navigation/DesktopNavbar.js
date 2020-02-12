@@ -23,6 +23,7 @@ const DesktopNavStyling = styled.nav`
     list-style: none;
     text-decoration: none;
     letter-spacing: 1px;
+    color: white;
   }
 
   .nav-links {
@@ -41,7 +42,6 @@ const DesktopNavStyling = styled.nav`
   }
 
   .links {
-    
     color: white;
     font-size: 1.2rem;
     padding: 5px 10px;
@@ -96,8 +96,7 @@ const DesktopNavbar = props => {
       </DesktopNavStyling>
       <HomePage />
     </div>
-    
-    
+  
   );
 }
 

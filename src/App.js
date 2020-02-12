@@ -7,8 +7,8 @@ import HomePage from './components/Home/Homepage'
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      
+      {/* <Navbar /> */}
+      <HomePage/>
     </BrowserRouter>
   );
 }
