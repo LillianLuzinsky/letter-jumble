@@ -36,42 +36,59 @@ const DesktopNavStyling = styled.nav`
   }
 
   .links {
+    
     color: white;
     font-size: 1.2rem;
     padding: 5px 10px;
     text-decoration: none;
+
+    :hover {
+      color: black;
+      background: white;
+      border-radius: 50px;
+      transition: 1s;
+      font-weight: 500;
+    }
   }
 `;
 
 const MobileNavButton = styled.button`
-  background: transparent;
-  height: 6vh;
-  width: 6vh;
-  color: white;
-  margin-right: 2rem;
-  border: none;
-  font-size: 2rem;
-  border-radius: 50px;
-  border: solid 2px white;
-  font-weight: 300;
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 6vh;
+    width: 6vh;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 2rem;
+  }
+
+  .toggle-button-line {
+    width: 40px;
+    height: 3px;
+    border-radius: 20px;
+    background: white;
   }
 `;
 
-const DesktopNavbar = () => {
+const DesktopNavbar = props => {
   return (
     <DesktopNavStyling>
       <div id="logo">Letter-Jumble</div>
-
-      <Navlinks/>
-
-
-      <MobileNavButton>X</MobileNavButton>
+      <Navlinks />
+      <MobileNavButton onClick={props.toggleMobileNavbar}>
+        <div className="toggle-button-line"></div>
+        <div className="toggle-button-line"></div>
+        <div className="toggle-button-line"></div>
+      </MobileNavButton>
     </DesktopNavStyling>
-  )
+  );
 }
 
 export default DesktopNavbar

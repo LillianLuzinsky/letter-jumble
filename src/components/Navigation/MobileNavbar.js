@@ -6,15 +6,17 @@ const MobileNavStyling = styled.nav`
   width: 50vw;
   background: #1c1c1c;
   align-self: flex-end;
-  transition: transform 1s;
-  transform: translateX( ${props => props.displayMobileNavbar ? ("0%") : ("100%") } );
+  transition: transform 0.5s;
+  transform: translateX(
+    ${props => (props.displayMobileNavbar ? "0%" : "100%")}
+  );
 
   .nav-links {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     list-style: none;
     letter-spacing: 2px;
     font-weight: 300;
@@ -24,6 +26,15 @@ const MobileNavStyling = styled.nav`
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
+    padding: 5px 10px;
+
+    :hover {
+      color: black;
+      background: white;
+      border-radius: 50px;
+      transition: 1s;
+      font-weight: 500;
+    }
   }
 `;
 
