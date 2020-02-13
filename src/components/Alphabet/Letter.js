@@ -59,7 +59,7 @@ const letterPool = {
   z: <Z />
 };
 
-export const Letter = ({ svg }) => (<div style={{animation: animations.popIn}}>{letterPool[svg]}</div>)
+export const Letter = ({ svg }) => (<div id="single-letter" style={{animation: animations.popIn, marginTop:"-4px"}}>{letterPool[svg]}</div>)
 
 Letter.propTypes = {
   svg: PropTypes.string.isRequired

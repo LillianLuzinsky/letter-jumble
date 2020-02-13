@@ -1,5 +1,4 @@
 import React from "react";
-import JumbleToggleButton from './JumbleToggleButton';
 import "./JumbleToolbar.css";
 
 const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {

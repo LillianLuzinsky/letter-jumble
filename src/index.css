@@ -43,3 +43,23 @@ main{
   margin-top: 150px;
 }
 
+#single-letter{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #single-letter{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .toolbar__navigation{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #alphabet-margin{
+    margin-top: 300px;
+  }
+}
+

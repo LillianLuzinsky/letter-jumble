@@ -7,10 +7,10 @@ import Navbar from '../Navigation/Navbar';
 import JumbleToolbar from '../JumbleToolbar/JumbleToolbar';
 
 const JumblePageStyling = styled.main`
-  margin-top: 150px;
+  margin-top: 25vh;
 
     @media screen and (max-width: 768px) {
-      margin-top: 300px
+      margin-top: 40vh;
     }
 
 `;
