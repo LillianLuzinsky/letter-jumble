@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
-
+import styled from 'styled-components';
 import { Letter, LetterContainer } from "../Alphabet/Letter";
 import Navbar from '../Navigation/Navbar';
 import JumbleToolbar from '../JumbleToolbar/JumbleToolbar';
+
+const JumblePageStyling = styled.main`
+  margin-top: 150px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 300px
+    }
+  }
+`;
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="letter-hover">{children}</div>
@@ -62,16 +71,11 @@ const JumblePage = () => {
     setSvgs(alphabet);
   };
 
-
   return (
     <div className="App">
-
       <Navbar/>
-
       <JumbleToolbar/>
-
-      <main style={{ marginTop: "80px" }}></main>
-      <h1 style={{ marginBottom: "50px" }}>Put the letters in order</h1>
+      <JumblePageStyling/>
       <SortableLetterContainer style={{ cursor: "pointer" }}
         axis="xy"
         onSortEnd={onSortEnd}

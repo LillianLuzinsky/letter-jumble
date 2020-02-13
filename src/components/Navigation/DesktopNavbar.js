@@ -42,14 +42,14 @@ const DesktopNavStyling = styled.nav`
   }
 
   .links {
+    border: 2px solid transparent;
     color: white;
     font-size: 1.2rem;
     padding: 5px 10px;
     text-decoration: none;
 
     :hover {
-      color: black;
-      background: white;
+      border: 2px solid white;
       border-radius: 50px;
       transition: 1s;
       font-weight: 500;
@@ -94,7 +94,6 @@ const DesktopNavbar = props => {
           <div className="toggle-button-line"></div>
         </MobileNavButton>
       </DesktopNavStyling>
-      {/* <HomePage /> */}
     </div>
   
   );

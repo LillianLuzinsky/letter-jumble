@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, Route } from 'react-router-dom';
-import JumblePage from '../JumblePage/Jumblepage'
+import { Link } from 'react-router-dom';
 
 const Navlinks = () => {
   return (

@@ -26,10 +26,9 @@ const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
     <header className="toolbar">
       <nav className="toolbar__navigation">
         <div>
-          <JumbleToggleButton />
         </div>
-        <div className="toolbar__logo">
-          <a href="/">letter jumble</a>
+        <div className="toolbar-header">
+          <h3>Press the "Jumble" button and drag and drop the letters back in order</h3>
         </div>
         <div className="spacer" />
         <div className="toolbar_navigation-items">
@@ -39,11 +38,6 @@ const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
             </li>
             <li>
               <button onClick={handleReset} id="reset">Reset</button>
-            </li>
-            <li>
-              <a href="/spelling">
-                <button id="spelling">Spelling</button>
-              </a>
             </li>
           </ul>
         </div>

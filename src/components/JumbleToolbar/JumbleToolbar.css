@@ -1,11 +1,9 @@
 .toolbar{
   position: fixed;
   width: 100%;
-  background: black;
-  top: 0;
+  top: 15vh;
   left: 0;
   height: 50px;
-  z-index: 1000;
 }
 
 .toolbar__navigation{
@@ -13,16 +11,14 @@
   height: 100%;
   align-items: center;
   padding: 0 1rem;
+  flex-direction: row;
 }
 
-.toolbar__logo {
-  margin-left: 1rem;
-}
-
-.toolbar__logo a{
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
+.toolbar-header h3 {
+  margin-left: 1.2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #888888;
 }
 
 .spacer{
@@ -50,6 +46,8 @@
   font-size: 1.5rem;
   width: 130px;
   letter-spacing: 2px;
+  margin-right: 2rem;
+  cursor: pointer;
 }
 
 #jumble{
@@ -58,32 +56,35 @@
   transition: 1s;
 }
 
-#jumble:hover, #jumble:active{
+#jumble:hover, #reset:active{
     color: white;
     background: #ae7fff;
-    transition: 0s;
+    transition: 0.5s;
 }
 
 #reset{
-  color: #ff6fff;
-  border: #ff6fff solid 1.5px;
-  transition: 1s;
-}
-
-#reset:hover, #reset:active{
-    color: white;
-    background: #ff6fff;
-    transition: 0s;
-}
-
-#spelling{
   color: #ff00c6;
   border: #ff00c6 solid 1.5px;
   transition: 1s;
 }
 
-#spelling:hover, #spelling:active{
+#reset:hover, #reset:active{
     color: white;
     background: #ff00c6;
-    transition: 0s;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .toolbar-header h3{
+    font-size: 1.5rem;
+  }
+
+  .toolbar__navigation{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #alphabet-margin{
+    margin-top: 300px;
+  }
 }
