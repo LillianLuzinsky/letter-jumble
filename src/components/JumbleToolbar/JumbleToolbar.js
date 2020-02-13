@@ -1,5 +1,6 @@
 import React from 'react';
 import './JumbleToolbar.css';
+import JumbleToggleButton from './JumbleToggleButton'
 
 const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
 
@@ -25,7 +26,7 @@ const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
     <header className="toolbar">
       <nav className="toolbar__navigation">
         <div>
-          <DrawerToggleButton />
+          <JumbleToggleButton />
         </div>
         <div className="toolbar__logo">
           <a href="/">letter jumble</a>

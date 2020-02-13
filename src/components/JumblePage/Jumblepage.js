@@ -4,6 +4,7 @@ import arrayMove from "array-move";
 
 import { Letter, LetterContainer } from "../Alphabet/Letter";
 import Navbar from '../Navigation/Navbar';
+import JumbleToolbar from '../JumbleToolbar/JumbleToolbar';
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="letter-hover">{children}</div>
@@ -66,6 +67,8 @@ const JumblePage = () => {
     <div className="App">
 
       <Navbar/>
+
+      <JumbleToolbar/>
 
       <main style={{ marginTop: "80px" }}></main>
       <h1 style={{ marginBottom: "50px" }}>Put the letters in order</h1>
