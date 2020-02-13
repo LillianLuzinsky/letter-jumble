@@ -1,13 +1,12 @@
-import React from 'react';
-import './JumbleToolbar.css';
-import JumbleToggleButton from './JumbleToggleButton'
+import React from "react";
+import JumbleToggleButton from './JumbleToggleButton';
+import "./JumbleToolbar.css";
 
 const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
-
   const jumbleArr = () => {
-    const newArr = new Array(26).fill(null)
+    const newArr = new Array(26).fill(null);
     const randomPos = () => Math.floor(Math.random() * 26);
-    svgs.forEach(el => {
+     svgs.forEach(el => {
       let found = false;
       let random = randomPos();
       while (!found) {
@@ -16,8 +15,8 @@ const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
           found = true;
         } else {
           random = randomPos();
-        };
-      };
+        }
+      }
     });
     handleSetJumble(newArr);
   };
@@ -26,24 +25,34 @@ const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
     <header className="toolbar">
       <nav className="toolbar__navigation">
         <div>
+          <JumbleToggleButton />
         </div>
-        <div className="toolbar-header">
-          <h3>Press the "Jumble" button and drag and drop the letters back in order</h3>
+        <div className="toolbar__logo">
+          <a href="/">letter jumble</a>
         </div>
         <div className="spacer" />
         <div className="toolbar_navigation-items">
           <ul>
             <li>
-              <button onClick={jumbleArr} id="jumble">Jumble</button>
+              <button onClick={jumbleArr} id="jumble">
+                Jumble
+              </button>
             </li>
             <li>
-              <button onClick={handleReset} id="reset">Reset</button>
+              <button onClick={handleReset} id="reset">
+                Reset
+              </button>
+            </li>
+            <li>
+              <a href="/spelling">
+                <button id="spelling">Spelling</button>
+              </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
   );
-}
+};
 
 export default JumbleToolbar;

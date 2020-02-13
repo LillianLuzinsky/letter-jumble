@@ -12,7 +12,7 @@ const JumblePageStyling = styled.main`
     @media screen and (max-width: 768px) {
       margin-top: 300px
     }
-  }
+
 `;
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
@@ -74,9 +74,14 @@ const JumblePage = () => {
   return (
     <div className="App">
       <Navbar/>
-      <JumbleToolbar/>
+      <JumbleToolbar  
+        svgs={svgs}
+        handleSetJumble={handleJumble}
+        handleReset={reset}
+      />
       <JumblePageStyling/>
-      <SortableLetterContainer style={{ cursor: "pointer" }}
+      <SortableLetterContainer 
+        style={{ cursor: "pointer" }}
         axis="xy"
         onSortEnd={onSortEnd}
         onSortStart={(node, event) => {
