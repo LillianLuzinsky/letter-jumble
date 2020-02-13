@@ -18,14 +18,11 @@ const TopBarStyling = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  /* background: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-double-twelve-purple-gradient-e-commerce-promotion-geometry-banner-image_183414.jpg")
-    no-repeat center; */
 
   header {
-    width: 70vw;
+    width: 63vw;
     border: solid white 5px;
     border-radius: 300px;
-    padding: 10px;
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
   }
@@ -36,9 +33,7 @@ const TopBarStyling = styled.section`
     color: white;
     margin: 0;
     letter-spacing: 3px;
-
-    /* background: url("https://www.schemecolor.com/wallpaper?i=28824&desktop") no-repeat center;
-    background-size: 190%; */
+    padding-top: 10px;
   }
 
   h2 {
@@ -47,6 +42,8 @@ const TopBarStyling = styled.section`
     font-weight: 400;
     font-size: 3rem;
     margin: 0;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
   }
 `;
 const BottomBarStyling = styled.section`
@@ -60,8 +57,7 @@ const BottomBarStyling = styled.section`
 
   p {
     color: aquamarine;
-    font-size: 2rem;
-    /* margin-bottom: 50px; */
+    font-size: 1.8rem;
   }
 `;
 
