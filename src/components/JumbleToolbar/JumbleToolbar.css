@@ -1,0 +1,89 @@
+.toolbar{
+  position: fixed;
+  width: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 1000;
+}
+
+.toolbar__navigation{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.toolbar__logo {
+  margin-left: 1rem;
+}
+
+.toolbar__logo a{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.spacer{
+  flex: 1;
+}
+
+.toolbar_navigation-items ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar_navigation-items li{
+  padding: 0 0.5rem;
+}
+
+.toolbar_navigation-items a,
+.toolbar_navigation-items button{
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  width: 130px;
+  letter-spacing: 2px;
+}
+
+#jumble{
+  color: #ae7fff;
+  border: #ae7fff solid 1.5px;
+  transition: 1s;
+}
+
+#jumble:hover, #jumble:active{
+    color: white;
+    background: #ae7fff;
+    transition: 0s;
+}
+
+#reset{
+  color: #ff6fff;
+  border: #ff6fff solid 1.5px;
+  transition: 1s;
+}
+
+#reset:hover, #reset:active{
+    color: white;
+    background: #ff6fff;
+    transition: 0s;
+}
+
+#spelling{
+  color: #ff00c6;
+  border: #ff00c6 solid 1.5px;
+  transition: 1s;
+}
+
+#spelling:hover, #spelling:active{
+    color: white;
+    background: #ff00c6;
+    transition: 0s;
+}
