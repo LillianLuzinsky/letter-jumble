@@ -5,7 +5,6 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: century-gothic, sans-serif;
-  cursor: pointer;
 }
 
 button:focus {outline:0;}
