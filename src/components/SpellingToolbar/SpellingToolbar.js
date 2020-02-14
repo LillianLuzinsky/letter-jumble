@@ -28,14 +28,14 @@ const SpellingToolbarStyling = styled.div`
     letter-spacing: 2px;
     margin-right: 2rem;
     cursor: pointer;
-    color: #a0f500;
-    border: #a0f500 solid 1.5px;
+    color: aquamarine;
+    border: aquamarine solid 1.5px;
     transition: 1s;
 
     :hover {
       color: white;
-      background: #a0f500;
-      border: #a0f500 solid 1.5px;
+      background: aquamarine;
+      border: aquamarine solid 1.5px;
     }
   }
 `;
@@ -43,9 +43,7 @@ const SpellingToolbarStyling = styled.div`
 function SpellingToolbar() {
   return (
     <SpellingToolbarStyling>
-      <h3>Spell out this word by dragging the letters
-        <br/> from the bottom section to the middle section
-      </h3>
+      <h3>Spell this word by dragging the letters to the bottom of the page</h3>
       <div className="spacer" />
       <button>Next Word</button>
     </SpellingToolbarStyling>

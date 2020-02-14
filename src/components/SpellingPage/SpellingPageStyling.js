@@ -12,6 +12,7 @@ const SpellingPageStyling = styled.section`
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 5vh;
 
   img {
     width: 150px;
@@ -19,13 +20,11 @@ const SpellingPageStyling = styled.section`
     border-radius: 30px;
   }
 
-  section {
+  section{
     justify-content: center;
     color: #3e3e3e;
     font-size: 3rem;
-    margin-bottom: 5vh;
-    width: 80vw;
-    background: #1c1c1c;
+    width: 70vw;
   }
 
   header {
@@ -36,21 +35,22 @@ const SpellingPageStyling = styled.section`
     align-items: center;
     font-weight: 700;
     font-size: 10rem;
+    height: 20vh;
   }
 
   button {
     width: 10vw;
     height: 10vw;
     background: transparent;
-    color: #0f0;
+    color: aquamarine;
     border: none;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 6rem;
     transition: 1.5s;
-    /* animation: animate 4s linear infinite; */
+    /* animation: animate 2s linear infinite; */
 
     :hover {
-      background: #0f0;
+      background: aquamarine;
       color: black;
       animation: animate 4s linear infinite;
     }

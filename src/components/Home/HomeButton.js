@@ -6,8 +6,6 @@ const HomeButtonStyling = styled.button`
   color: white;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.3);
-  /* background:url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-double-twelve-purple-gradient-e-commerce-promotion-geometry-banner-image_183414.jpg") no-repeat center;
-  background-size: cover; */
   border: 2px solid white;
   border-radius: 30px;
   font-size: 2rem;

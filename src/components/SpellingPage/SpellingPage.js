@@ -10,59 +10,59 @@ class SpellingPage extends Component {
   words = [
     {
       word: "bee",
-      letters: "ebpde",
+      letters: "xebptde",
       image: "https://media0.giphy.com/media/QXJa2uAa44fYRSats0/giphy.gif"
     },
     {
       word: "cat",
-      letters: "avdtc",
+      letters: "avdtcth",
       image:
         "https://cdn.dribbble.com/users/2289040/screenshots/5511661/dribbble.gif"
     },
     {
       word: "dog",
-      letters: "dgdto",
+      letters: "dgdtzol",
       image: "https://media1.giphy.com/media/9El4QawNPfeBW/source.gif"
     },
 
     {
       word: "fox",
-      letters: "xdfto",
+      letters: "xdftodh",
       image:
         "https://i.pinimg.com/originals/5e/3a/69/5e3a6925e67a8e7f6293c09f2cc9f4f7.gif"
     },
     {
       word: "mum",
-      letters: "mudfm",
+      letters: "mudfmai",
       image:
         "https://lh3.googleusercontent.com/proxy/Ped4WeqmI7KCK5ozPzMK4DuXo_aTf73_EgTd7wTAe-YFei_XL1EvydK04UAx_7uWLez-UIy403Ow8glBbLAwSRni_4NB1Vsn9_JIrS8KyMz1IR3yUl8"
     },
     {
       word: "dad",
-      letters: "dpwad",
+      letters: "apdpwad",
       image:
         "https://cdn.dribbble.com/users/2834752/screenshots/6195752/mar_16.gif"
     },
     {
       word: "pig",
-      letters: "ipwag",
+      letters: "ipwagyh",
       image:
         "https://i.pinimg.com/originals/76/24/87/762487cf2f31160eea07c39426d6e639.gif"
     },
     {
       word: "hat",
-      letters: "dthad",
+      letters: "dthadzv",
       image:
         "https://i.pinimg.com/originals/16/5f/8f/165f8f106e386ecdd36e5b3a07ceff37.gif"
     },
     {
       word: "egg",
-      letters: "dgweg",
+      letters: "dgweptg",
       image: "https://media1.giphy.com/media/biwEneuqbSpM5HDiM2/giphy.gif"
     },
     {
       word: "sun",
-      letters: "unhsx",
+      letters: "unhsxwy",
       image:
         "https://media1.tenor.com/images/0620fecdd6795972cfa1d7777803e068/tenor.gif?itemid=14419210"
     }
@@ -102,25 +102,24 @@ class SpellingPage extends Component {
         <SpellingToolbar />
         <SpellingPageStyling>
           <header>
-            {this.state.word}
             <img src={this.state.image} />
+            {this.state.word}
           </header>
-          <SpellingBoard>
-            {this.state.guess.map((letter, i, self) => (
-              <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
-                <button id="letter">{letter}</button>
-              </SpellingCard>
-            ))}
-          </SpellingBoard>
           <SpellingBoard>
             {this.state.letters.map((c, index) => (
               <SpellingCard
-                style={{ background: "blue" }}
                 key={"letter_" + index}
                 id={"letter_" + index}
                 draggable="true"
               >
                 <button>{c}</button>
+              </SpellingCard>
+            ))}
+          </SpellingBoard>
+          <SpellingBoard>
+            {this.state.guess.map((letter, i, self) => (
+              <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
+                <button id="letter">{letter}</button>
               </SpellingCard>
             ))}
           </SpellingBoard>
