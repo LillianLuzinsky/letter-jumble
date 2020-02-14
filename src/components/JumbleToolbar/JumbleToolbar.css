@@ -1,9 +1,9 @@
 .toolbar{
   position: fixed;
   width: 100%;
-  top: 15vh;
+  top: 10vh;
   left: 0;
-  height: 50px;
+  height: 15vh;
 }
 
 .toolbar__navigation{
@@ -14,15 +14,12 @@
   flex-direction: row;
 }
 
-.toolbar-header h3 {
+.toolbar__navigation h3 {
   margin-left: 1.2rem;
   font-weight: 400;
   font-size: 1.5rem;
   color: #888888;
-}
-
-.spacer{
-  flex: 1;
+  padding: 0;
 }
 
 .toolbar_navigation-items ul{

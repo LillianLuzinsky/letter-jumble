@@ -4,6 +4,7 @@ import CongratsModal from '../CongratsModal/CongratsModal';
 import SpellingBoard from "../SpellingPage/SpellingBoard";
 import SpellingCard from '../SpellingPage/SpellingCard';
 import SpellingPageStyling from './SpellingPageStyling';
+import SpellingToolbar from '../SpellingToolbar/SpellingToolbar';
 
 class SpellingPage extends Component {
   words = [
@@ -98,17 +99,13 @@ class SpellingPage extends Component {
     return (
       <div>
         <Navbar />
+        <SpellingToolbar />
         <SpellingPageStyling>
-          <section
-            style={{ color: "red", paddingTop: "10vh", background: "blue" }}
-          >
-            Drag and Drop
-            <button>Next Word</button>
-          </section>
-
-          <main className="flexbox">
-            <header style={{ color: "white" }}>{this.state.word}</header>
-            <img src={this.state.image} />
+\
+            <header style={{ color: "white", marginTop: "20vh" }}>
+              {this.state.word}
+              <img src={this.state.image} />
+            </header>
             <SpellingBoard id="board1">
               {this.state.guess.map((letter, i, self) => (
                 <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
@@ -131,7 +128,7 @@ class SpellingPage extends Component {
               ))}
             </SpellingBoard>
             {this.isWin() && <CongratsModal></CongratsModal>}
-          </main>
+
         </SpellingPageStyling>
       </div>
     );

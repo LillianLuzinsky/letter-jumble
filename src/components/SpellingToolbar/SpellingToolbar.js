@@ -1,50 +1,34 @@
-import React from "react";
-import "../JumbleToolbar/JumbleToolbar.css";
+import React from 'react'
+import styled from 'styled-components';
 
-const SpellingToolbar = ({ svgs, handleSetJumble, handleReset }) => {
-  const jumbleArr = () => {
-    const newArr = new Array(26).fill(null);
-    const randomPos = () => Math.floor(Math.random() * 26);
-    svgs.forEach(el => {
-      let found = false;
-      let random = randomPos();
-      while (!found) {
-        if (!newArr[random]) {
-          newArr[random] = el;
-          found = true;
-        } else {
-          random = randomPos();
-        }
-      }
-    });
-    handleSetJumble(newArr);
-  };
+const SpellingToolbarStyling = styled.div`
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 15vh;
+  background: blue;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
+  h3 {
+    margin-left: 1.2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #888888;
+  }
+`;
+
+function SpellingToolbar() {
   return (
-    <header className="toolbar">
-      <nav className="toolbar__navigation">
-        <div></div>
-        <div className="toolbar-header">
-          <h3>Press the 'Jumble' button and then put the letters in order</h3>
-        </div>
-        <div className="spacer" />
-        <div className="toolbar_navigation-items">
-          <ul>
-            <li>
-              <button onClick={jumbleArr} id="jumble">
-                Jumble
-              </button>
-            </li>
-            <li>
-              <button onClick={handleReset} id="reset">
-                Reset
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <SpellingToolbarStyling>
+      <h3>Drag these letters to spell the above word</h3>
+      <div className="spacer" />
+      <button>Next Word</button>
+    </SpellingToolbarStyling>
   );
-};
+}
 
-export default SpellingToolbar;
+export default SpellingToolbar
+

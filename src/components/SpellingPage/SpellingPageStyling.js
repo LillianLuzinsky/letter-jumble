@@ -2,12 +2,17 @@ import styled from "styled-components";
 
 const SpellingPageStyling = styled.section`
   margin-top: 10vh;
-  width: 100vw;
-  height: 90vh;
-  background: pink;
+  width: 100%;
+  height: 100vh;
+  background: red;
   margin: 0;
   padding: 0;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 
   img {
     width: 200px;
@@ -22,9 +27,12 @@ const SpellingPageStyling = styled.section`
   }
 
   header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
-    color: black;
-    font-size: 3rem;
+    font-size: 10rem;
     background: hotpink;
   }
 `;

@@ -23,11 +23,7 @@ const JumbleToolbar = ({ svgs, handleSetJumble, handleReset }) => {
   return (
     <header className="toolbar">
       <nav className="toolbar__navigation">
-        <div>
-        </div>
-        <div className="toolbar-header">
-          <h3>Press the 'Jumble' button and then put the letters in order</h3>
-        </div>
+        <h3>Press the 'Jumble' button and then put the letters in order</h3>
         <div className="spacer" />
         <div className="toolbar_navigation-items">
           <ul>

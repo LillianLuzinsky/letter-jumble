@@ -2,16 +2,13 @@ import React from "react";
 import styled from 'styled-components'
 
 const SpellingBoardStyling = styled.section`
-  height: 35vh;
+  height: 20vh;
   width: 100%;
   padding: 0;
   background: yellow;
   display: flex;
-  flex-direction: row;
-
-  #board1{
-    background:blue;
-  }
+  justify-content: space-evenly;
+  align-items: center;
 `;
 
 function SpellingBoard(props) {
