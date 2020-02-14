@@ -53,6 +53,7 @@ const SpellingPageStyling = styled.section`
       background: aquamarine;
       color: black;
       animation: animate 4s linear infinite;
+      transition: 0s;
     }
   }
 
