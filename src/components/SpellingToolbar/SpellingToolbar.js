@@ -40,12 +40,18 @@ const SpellingToolbarStyling = styled.div`
   }
 `;
 
+  // const reloadMyPage =  
+function reloadMyPage() {
+  window.location.reload();
+  }
+
+
 function SpellingToolbar() {
   return (
     <SpellingToolbarStyling>
       <h3>Spell this word by dragging the letters to the bottom of the page</h3>
       <div className="spacer" />
-      <button>Next Word</button>
+      <button onClick={reloadMyPage}>Next Word</button>
     </SpellingToolbarStyling>
   );
 }

@@ -91,6 +91,18 @@ class SpellingPage extends Component {
     this.setState(state => ({ word, letters, guess, image }));
   }
 
+  setGuessLetter = (el, index) => {
+    console.log(el, index);
+    const newGuess = this.state.guess;
+    newGuess.push(el);
+    this.setState({ guess: newGuess });
+  };
+
+  removeGuessLetter = (el, index) => {
+    console.log('hello');
+    console.log(el, index);
+  };
+
   isWin = () => {
     return false;
   };
@@ -105,7 +117,11 @@ class SpellingPage extends Component {
             <img src={this.state.image} />
             {this.state.word}
           </header>
-          <SpellingBoard>
+          <SpellingBoard
+            word={this.state.word}
+            letters={this.state.letters}
+            removeGuessLetter={this.removeGuessLetter}
+          >
             {this.state.letters.map((c, index) => (
               <SpellingCard
                 key={"letter_" + index}
@@ -116,10 +132,14 @@ class SpellingPage extends Component {
               </SpellingCard>
             ))}
           </SpellingBoard>
-          <SpellingBoard>
-            {this.state.guess.map((letter, i, self) => (
+          <SpellingBoard
+            word={this.state.word}
+            letters={this.state.letters}
+            setGuessLetter={this.setGuessLetter}
+          >
+            {this.state.guess.map((letter, i) => (
               <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
-                <button id="letter">{letter}</button>
+                {/* <button id="letter"></button> */}
               </SpellingCard>
             ))}
           </SpellingBoard>
