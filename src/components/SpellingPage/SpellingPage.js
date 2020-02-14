@@ -6,39 +6,66 @@ import './SpellingPage.css';
 import CongratsModal from '../CongratsModal/CongratsModal'
 
 class SpellingPage extends Component {
-  words =[
-      {
-        word: "cat",
-        letters: "jadksljfchkdfht",
-        image:
-          "https://www.purina.com/sites/g/files/auxxlc196/files/AmericanBobtail_body_6.jpg"
-      },
-      {
-        word: "dog",
-        letters: "hlaflkkjadfog",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5_yFCdVuUOuEtEE_Y54MApOgGH_70SA8zYaa-8X3y3u0nbSMN"
-      },
-      {
-        word: "ant",
-        letters: "actcnc",
-        image:
-          "https://image.shutterstock.com/image-vector/cute-ant-cartoonvector-illustration-260nw-480060628.jpg"
-      },
-      {
-        word: "mum",
-        letters: "dmmus",
-        image:
-          "https://www.thesun.co.uk/wp-content/uploads/2017/04/image001-e1491233492226.png"
-      },
-      {
-        word: "dad",
-        letters: "dpwad",
-        image:
-          "https://lekgh.com/wp-content/uploads/2018/06/467554208.jpg"
-      }
-    ];
-  
+  words = [
+    {
+      word: "bee",
+      letters: "ebpde",
+      image: "https://media0.giphy.com/media/QXJa2uAa44fYRSats0/giphy.gif"
+    },
+    {
+      word: "cat",
+      letters: "avdtc",
+      image:
+        "https://cdn.dribbble.com/users/2289040/screenshots/5511661/dribbble.gif"
+    },
+    {
+      word: "dog",
+      letters: "dgdto",
+      image: "https://media1.giphy.com/media/9El4QawNPfeBW/source.gif"
+    },
+
+    {
+      word: "fox",
+      letters: "xdfto",
+      image:
+        "https://i.pinimg.com/originals/5e/3a/69/5e3a6925e67a8e7f6293c09f2cc9f4f7.gif"
+    },
+    {
+      word: "mum",
+      letters: "mudfm",
+      image:
+        "https://lh3.googleusercontent.com/proxy/Ped4WeqmI7KCK5ozPzMK4DuXo_aTf73_EgTd7wTAe-YFei_XL1EvydK04UAx_7uWLez-UIy403Ow8glBbLAwSRni_4NB1Vsn9_JIrS8KyMz1IR3yUl8"
+    },
+    {
+      word: "dad",
+      letters: "dpwad",
+      image:
+        "https://cdn.dribbble.com/users/2834752/screenshots/6195752/mar_16.gif"
+    },
+    {
+      word: "pig",
+      letters: "ipwag",
+      image:
+        "https://i.pinimg.com/originals/76/24/87/762487cf2f31160eea07c39426d6e639.gif"
+    },
+    {
+      word: "hat",
+      letters: "dthad",
+      image:
+        "https://i.pinimg.com/originals/16/5f/8f/165f8f106e386ecdd36e5b3a07ceff37.gif"
+    },
+    {
+      word: "egg",
+      letters: "dgweg",
+      image: "https://media1.giphy.com/media/biwEneuqbSpM5HDiM2/giphy.gif"
+    },
+    {
+      word: "sun",
+      letters: "unhsx",
+      image:
+        "https://media1.tenor.com/images/0620fecdd6795972cfa1d7777803e068/tenor.gif?itemid=14419210"
+    }
+  ];
 
   constructor() {
     super();
@@ -65,7 +92,7 @@ class SpellingPage extends Component {
 
   isWin = () => {
     return false;
-  }
+  };
 
   render() {
     return (
@@ -77,17 +104,15 @@ class SpellingPage extends Component {
               {this.state.word}
             </h1>
             <img src={this.state.image} />
-            <h1>Guess</h1>
             {this.state.guess.map((letter, i, self) => (
-                <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
-                  <button>{letter}</button>
-                </SpellingCard>
-              )
-            )}
+              <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
+                <button>{letter}</button>
+              </SpellingCard>
+            ))}
           </SpellingBoard>
 
           <SpellingBoard id="board2" className="board">
-            <h1>Letters</h1>
+            <h1>Drag these letters to spell the above word</h1>
             {this.state.letters.map((c, index) => (
               <SpellingCard
                 key={"letter_" + index}
