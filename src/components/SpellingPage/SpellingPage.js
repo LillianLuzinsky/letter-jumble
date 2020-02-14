@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Navbar from '../Navigation/Navbar'
 import SpellingBoard from "../SpellingPage/SpellingBoard";
 import SpellingCard from '../SpellingPage/SpellingCard';
-import './SpellingPage.css';
-import CongratsModal from '../CongratsModal/CongratsModal'
+import CongratsModal from '../CongratsModal/CongratsModal';
+import SpellingPageStyling from './SpellingPageStyling';
 
 class SpellingPage extends Component {
   words = [
@@ -98,33 +98,36 @@ class SpellingPage extends Component {
     return (
       <div>
         <Navbar />
-        <main className="flexbox">
-          <SpellingBoard id="board1" className="board">
-            <h1 style={{ marginTop: "400", color: "black" }}>
-              {this.state.word}
-            </h1>
-            <img src={this.state.image} />
-            {this.state.guess.map((letter, i, self) => (
-              <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
-                <button>{letter}</button>
-              </SpellingCard>
-            ))}
-          </SpellingBoard>
+        <SpellingPageStyling>
+          <h1 style={{ color: "red" }}>Drag and Drop</h1>
+          <main className="flexbox">
+            <SpellingBoard id="board1" className="board">
+              <h1 style={{ marginTop: "400", color: "black" }}>
+                {this.state.word}
+              </h1>
+              <img src={this.state.image} />
+              {this.state.guess.map((letter, i, self) => (
+                <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
+                  <button>{letter}</button>
+                </SpellingCard>
+              ))}
+            </SpellingBoard>
 
-          <SpellingBoard id="board2" className="board">
-            <h1>Drag these letters to spell the above word</h1>
-            {this.state.letters.map((c, index) => (
-              <SpellingCard
-                key={"letter_" + index}
-                id={"letter_" + index}
-                draggable="true"
-              >
-                <button>{c}</button>
-              </SpellingCard>
-            ))}
-          </SpellingBoard>
-          {this.isWin() && <CongratsModal></CongratsModal>}
-        </main>
+            <SpellingBoard id="board2" className="board">
+              <h1>Drag these letters to spell the above word</h1>
+              {this.state.letters.map((c, index) => (
+                <SpellingCard
+                  key={"letter_" + index}
+                  id={"letter_" + index}
+                  draggable="true"
+                >
+                  <button>{c}</button>
+                </SpellingCard>
+              ))}
+            </SpellingBoard>
+            {this.isWin() && <CongratsModal></CongratsModal>}
+          </main>
+        </SpellingPageStyling>
       </div>
     );
   }

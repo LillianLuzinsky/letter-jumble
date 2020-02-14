@@ -11,6 +11,7 @@ const NavbarStyling = styled.div`
   flex-flow: column nowrap;
   justify-content: flex-start;
   overflow-x: hidden;
+  z-index: 100;
 `
 
 class Navbar extends Component {
