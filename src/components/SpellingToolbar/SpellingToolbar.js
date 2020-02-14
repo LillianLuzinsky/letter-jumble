@@ -43,7 +43,9 @@ const SpellingToolbarStyling = styled.div`
 function SpellingToolbar() {
   return (
     <SpellingToolbarStyling>
-      <h3>Drag these letters to spell the above word</h3>
+      <h3>Spell out this word by dragging the letters
+        <br/> from the bottom section to the middle section
+      </h3>
       <div className="spacer" />
       <button>Next Word</button>
     </SpellingToolbarStyling>

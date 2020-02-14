@@ -5,7 +5,6 @@ const SpellingBoardStyling = styled.section`
   height: 20vh;
   width: 100%;
   padding: 0;
-  background: yellow;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

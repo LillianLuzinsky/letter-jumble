@@ -7,6 +7,11 @@
   font-family: century-gothic, sans-serif;
 }
 
+body{
+  background-color: black;
+  overflow: hidden;
+}
+
 button:focus {outline:0;}
 
 html{

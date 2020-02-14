@@ -101,18 +101,17 @@ class SpellingPage extends Component {
         <Navbar />
         <SpellingToolbar />
         <SpellingPageStyling>
-          <header style={{color: "blue"}}>
+          <header>
             {this.state.word}
             <img src={this.state.image} />
           </header>
-          <SpellingBoard id="board1">
+          <SpellingBoard>
             {this.state.guess.map((letter, i, self) => (
               <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
-                <button>{letter}</button>
+                <button id="letter">{letter}</button>
               </SpellingCard>
             ))}
           </SpellingBoard>
-
           <SpellingBoard>
             {this.state.letters.map((c, index) => (
               <SpellingCard
@@ -125,6 +124,7 @@ class SpellingPage extends Component {
               </SpellingCard>
             ))}
           </SpellingBoard>
+
           {this.isWin() && <CongratsModal></CongratsModal>}
         </SpellingPageStyling>
       </div>
