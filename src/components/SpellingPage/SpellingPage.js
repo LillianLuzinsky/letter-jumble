@@ -101,34 +101,31 @@ class SpellingPage extends Component {
         <Navbar />
         <SpellingToolbar />
         <SpellingPageStyling>
-\
-            <header style={{ color: "white", marginTop: "20vh" }}>
-              {this.state.word}
-              <img src={this.state.image} />
-            </header>
-            <SpellingBoard id="board1">
-              {this.state.guess.map((letter, i, self) => (
-                <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
-                  <button>{letter}</button>
-                </SpellingCard>
-              ))}
-            </SpellingBoard>
+          <header style={{color: "blue"}}>
+            {this.state.word}
+            <img src={this.state.image} />
+          </header>
+          <SpellingBoard id="board1">
+            {this.state.guess.map((letter, i, self) => (
+              <SpellingCard key={"guess_" + i} id="card_id" draggable="true">
+                <button>{letter}</button>
+              </SpellingCard>
+            ))}
+          </SpellingBoard>
 
-            <SpellingBoard style={{ background: "blue" }}>
-              <h1>Drag these letters to spell the above word</h1>
-              {this.state.letters.map((c, index) => (
-                <SpellingCard
-                  style={{ background: "blue" }}
-                  key={"letter_" + index}
-                  id={"letter_" + index}
-                  draggable="true"
-                >
-                  <button>{c}</button>
-                </SpellingCard>
-              ))}
-            </SpellingBoard>
-            {this.isWin() && <CongratsModal></CongratsModal>}
-
+          <SpellingBoard>
+            {this.state.letters.map((c, index) => (
+              <SpellingCard
+                style={{ background: "blue" }}
+                key={"letter_" + index}
+                id={"letter_" + index}
+                draggable="true"
+              >
+                <button>{c}</button>
+              </SpellingCard>
+            ))}
+          </SpellingBoard>
+          {this.isWin() && <CongratsModal></CongratsModal>}
         </SpellingPageStyling>
       </div>
     );
