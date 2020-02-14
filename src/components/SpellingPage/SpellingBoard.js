@@ -1,4 +1,18 @@
 import React from "react";
+import styled from 'styled-components'
+
+const SpellingBoardStyling = styled.section`
+  height: 35vh;
+  width: 100%;
+  padding: 0;
+  background: yellow;
+  display: flex;
+  flex-direction: row;
+
+  #board1{
+    background:blue;
+  }
+`;
 
 function SpellingBoard(props) {
   const drop = e => {
@@ -14,14 +28,14 @@ function SpellingBoard(props) {
   };
 
   return (
-    <div
+    <SpellingBoardStyling
       id={props.id}
       className={props.className}
       onDrop={drop}
       onDragOver={dragOver}
     >
       {props.children}
-    </div>
+    </SpellingBoardStyling>
   );
 }
 

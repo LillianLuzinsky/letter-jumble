@@ -9,22 +9,23 @@ const SpellingPageStyling = styled.section`
   padding: 0;
   color: white;
 
-  header{
-    display: absolute;
-    top: 300px;
-    margin-top: 200px;
-    color: red;
-  }
-
   img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
   }
 
-  h1 {
+  section {
     font-weight: 700;
     color: #3e3e3e;
     font-size: 3rem;
+  }
+
+  header {
+    font-weight: 700;
+    color: black;
+    font-size: 3rem;
+    background: hotpink;
   }
 `;
 
