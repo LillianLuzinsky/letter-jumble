@@ -3,14 +3,14 @@ import styled from "styled-components";
 const SpellingPageStyling = styled.section`
   margin-top: 10vh;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background: red;
   margin: 0;
   padding: 0;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
 
