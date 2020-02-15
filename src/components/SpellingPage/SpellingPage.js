@@ -35,7 +35,7 @@ class SpellingPage extends Component {
       word: "mum",
       letters: "mudfmai",
       image:
-        "https://lh3.googleusercontent.com/proxy/Ped4WeqmI7KCK5ozPzMK4DuXo_aTf73_EgTd7wTAe-YFei_XL1EvydK04UAx_7uWLez-UIy403Ow8glBbLAwSRni_4NB1Vsn9_JIrS8KyMz1IR3yUl8"
+        "https://media1.giphy.com/media/3o7bujxjnstMTuYuAM/giphy.gif"
     },
     {
       word: "dad",
