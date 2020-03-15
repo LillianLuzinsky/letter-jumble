@@ -19,8 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Presently, the homepage only features 2 games, which are labelled: 'Jumble' and 'Spelling'.<br>
 <br>
 The 'Jumble' page has the entire alphabet displayed.<br>
-Click on the 'Jumble' button and the alphabet will be shuffled<br>
-The parent then helps the child to drag and drop the alphabet back in order.
+Click on the 'Jumble' button and the alphabet will be shuffled in a random order.<br>
+The parent then helps the child to drag and drop the alphabet back in the correct order.
 <br><br>
 The 'Spelling' page provides a random 3 letter word accompanied by an 
 animated gif.<br>
@@ -59,11 +59,11 @@ My sister is currently using this app to play with my niece.<br>
 1) I'm still learning how to develop in ReactJS. I tested a few React drag and drop
 libraries, and react-sortable-hoc was the library I could understand to implement
 in my project.
-2) I tried not using a library for the spelling page, but unfortunately, 
-you can't drag and drop on a mobile phone or tablet.
+2) I tried not to use a library for the spelling page, because I wanted to understand 
+the algorithm. Unfortunately, you can't drag and drop on a mobile phone or tablet.
 3) I'm still working on making it responsive for smaller devices.
 4) Navigation bar is still a work in progress.
-5) I want to learn how to add an animated feature where it rewards the child 
-when the exercise is completed accurately.
+5) I want to learn to add an animated feature where it rewards the child 
+when the exercise is accurately completed.
 
-### Spent 2 weeks working from recieving brief until delivering presentation.
+### From receiving brief to delivering our final presentation, took 2 weeks.
