@@ -16,6 +16,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## How it works
 
+Presently, the homepage only features 2 games, which are labelled: 'Jumble' and 'Spelling'.<br>
+<br>
+The 'Jumble' page has the entire alphabet displayed.<br>
+Click on the 'Jumble' button and the alphabet will be shuffled<br>
+The parent then helps the child to drag and drop the alphabet back in order.
+<br><br>
+The 'Spelling' page provides a random 3 letter word accompanied by an 
+animated gif.<br>
+Underneath is a set of unordered letters, which the child is now required
+to drag and drop the correct letters to spell out the word provided.<br>
+When successful, click on 'Next Word' button.
 
 ---
 
@@ -52,5 +63,7 @@ in my project.
 you can't drag and drop on a mobile phone or tablet.
 3) I'm still working on making it responsive for smaller devices.
 4) Navigation bar is still a work in progress.
+5) I want to learn how to add an animated feature where it rewards the child 
+when the exercise is completed accurately.
 
 ### Spent 2 weeks working from recieving brief until delivering presentation.
