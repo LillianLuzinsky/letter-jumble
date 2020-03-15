@@ -58,11 +58,11 @@ My sister is currently using this app to play with my niece.<br>
 
 1) I'm still learning how to develop in ReactJS. I tested a few React drag and drop
 libraries, and react-sortable-hoc was the library I could understand to implement
-in my project.<br>
+in my project.<br><br>
 2) I tried not to use a library for the spelling page, because I wanted to understand 
-the algorithm. Unfortunately, you can't drag and drop on a mobile phone or tablet.<br>
-3) I'm still working on making it responsive for smaller devices.<br>
-4) Navigation bar is still a work in progress.<br>
+the algorithm. Unfortunately, you can't drag and drop on a mobile phone or tablet.<br><br>
+3) I'm still working on making it responsive for smaller devices.<br><br>
+4) Navigation bar is still a work in progress.<br><br>
 5) I want to learn to add an animated feature where it rewards the child 
 when the exercise is accurately completed.
 
