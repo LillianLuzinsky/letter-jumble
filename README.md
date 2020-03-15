@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sweets To Go
+This is a simple dessert ordering app. 
+I produced the front end design with React Styled Components.
 
-## Available Scripts
-
-In the project directory, you can run:
+## Deployment
+You can view the demo in this link:
+https://letter-jumble.herokuapp.com/
 
 ### `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## How it works
+Since this is only a front end design, I will explain the workings of the app 
+as if we have a database to fetch the menu items from.
+<br><br>
+First, you will see the homepage which has only one button to press.<br>
+Click on it and it will send you to the login page.<br>
+If you don't have an account, you can click on the sign-up link.<br>
+Once signed in, you'll see the menu page.
+<br><br>
+When you choose a menu item by clicking 'Add to cart', you will see the purchase page.<br>
+On this page, you can add or subtract quantities of your chosen dessert. 
+When you're satisfied with your purchase, click the 'Confirm Purchase'
+button, and a modal will appear with a short message.<br>
+<br>
+Additionally, this app includes an Account page, 
+where you can see your purchase history.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## Used Technologies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) ReactJS
+2) react-sortable-hoc
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Screenshots
 
-### `yarn eject`
+![Letter Jumble homepage](https://lillianluzinsky.github.io/website/images/Jumble/JumbleGame.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Letter Jumble gif](https://lillianluzinsky.github.io/website/images/Jumble/Jumble.gif)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Things I enjoyed
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This is one of my first projects using React. I discovered styled-components and 
+absolutely loved it. <br>
+It makes styling a multipage website a lot more consistant 
+and easier to keep track of, instead of adding all the stylings into the App.css file.
 
-## Learn More
+## Challenges
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1) Initially, this was going to be a full stack app that uses 
+Rails for back end and React for front end. As this was a group project,
+I concentrated on giving our app presence through the front end design.
+I didn't have the opportunity to work on the back end as much I would've liked to.
+2) Used React Bootstrap to create a responsive navbar.
+This caused issues for login and logout, as I was using "href" instead of "Link to".
+This also created issues uploading react app in github pages.
+3) Learned how to work with a team as a developer. We did have some minor
+merge conflicts, but fortunately, they were very few.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Overall, I'm very happy with the results we achieved in only 2 weeks.
