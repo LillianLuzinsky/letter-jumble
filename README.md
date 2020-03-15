@@ -29,9 +29,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Screenshots
 
-![Letter Jumble homepage](./public/screenshots/Homepage.png)
-![Letter Jumble homepage](https://lillianluzinsky.github.io/website/images/Jumble/JumbleGame.png)
-
+![Letter-Jumble homepage](./public/screenshots/Homepage.png)
+![Jumble page](./public/screenshots/Jumble.png)
+![Spelling page](./public/screenshots/Spelling.png)
 ![Letter Jumble gif](https://lillianluzinsky.github.io/website/images/Jumble/Jumble.gif)
 
 ---
