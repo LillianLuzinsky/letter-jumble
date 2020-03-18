@@ -49,14 +49,13 @@ When successful, click on 'Next Word' button.
 
 ## Things I enjoyed
 
-My niece loved the colours used and the hover effects<br>
-The dark background prevents eye strain when using the app.<br>
-My sister is currently using this app to play with my niece.
+1) My niece loved the colours used and the hover effects<br><br>
+2) The dark background prevents eye strain when using the app.<br><br>
+3) My sister is currently using this app to play with my niece.
 I'm proud to say that my 3 year old niece was able to learn the entire alphabet
 in only 2 days thanks to these interactive games.<br>
-I personally have played these games with my niece and she
-has learned the entire alphabet and is also learning how to spell.
 
+---
 
 ## Challenges
 
