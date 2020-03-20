@@ -43,7 +43,7 @@ When successful, click on 'Next Word' button.
 ![Letter-Jumble homepage](./public/screenshots/Homepage.png)
 ![Jumble page](./public/screenshots/Jumble1.png)
 ![Spelling page](./public/screenshots/Spelling.png)
-![Letter Jumble gif](https://lillianluzinsky.github.io/website/images/Jumble/Jumble.gif)
+![Letter Jumble gif](./public/screenshots/Jumble.gif)
 
 ---
 
